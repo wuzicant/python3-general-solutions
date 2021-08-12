@@ -2,3 +2,5 @@
 python3 guide
 - I use this place to warn Steven do not code without brain
 - leetcode solutions attached
+
+* github will deprecate u:p login
