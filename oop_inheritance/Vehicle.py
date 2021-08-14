@@ -1,5 +1,5 @@
 class Vehicle:
-    def __init__(self, make = 'mb'):
+    def __init__(self, make='mb'):
         self.__make = make
         self.__year = 1995
     
@@ -11,6 +11,7 @@ class Vehicle:
     
     def horn(self):
         print('b---------')
-        
+
+
 def print_line():
     print('====LINE====')
