@@ -1,26 +1,28 @@
-from Vehicle import Vehicle, print_line
+from Vehicle import Vehicle
 
 
 class Car(Vehicle):
 
     def __init__(self, power=False, name='duo'):
-        # Vehicle.__init__(self, 'ss')
-        super(Car, self).__init__()
+        Vehicle.__init__(self, 'ss', '918')
+        #super(Car, self).__init__()
         self.__power = power
         self.__name = name
 
     def get_name(self):
+        print('child')
         return self.__name
 
     @staticmethod
-    def get_power(self):
-        return self.__power
+    def get_power():
+        return 'self.__power'
 
     def move_forward(self):
         print('forward -----')
 
     def move_backward(self):
-        print('{} backward -----'.format(self.__name))
+        n = self.__name
+        print(f'{n} backward -----')
 
     def move_left(self):
         print('left -----')
@@ -28,14 +30,8 @@ class Car(Vehicle):
     def move_right(self):
         print('right -----')
 
+if __name__ == '__main__':
+    v = Vehicle()
+    c = Car(True, 'bmw')
+    print(c.get_name())
 
-car = Car(True, )
-print(car.get_name()
-      , car.get_power()
-      , car.get_year()
-      , car.get_make()
-      )
-
-car.move_backward()
-car.horn()
-print_line()
