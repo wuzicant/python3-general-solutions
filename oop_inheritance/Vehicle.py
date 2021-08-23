@@ -6,7 +6,11 @@ class Vehicle:
         self.__make = make
         self.__name = name
         self.__year = 1995
-    
+
+    # def __init__(self, make='mb', name='N'):
+    #     self.__make = make
+    #     self.__year = 1995
+
     def get_make(self):
         return self.__make
 
